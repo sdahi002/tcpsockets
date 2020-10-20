@@ -27,7 +27,7 @@ int main(){
 	server_address.sin_addr.s_addr = INADDR_ANY; //ANY CONSTANST RESOLVE TO ANY IP ON MACHINE
 
 	//bind the socket to IP & port
-	bind(server_address, (struct sockaddr*) &server_address, sizeof(server_address));
+	bind(server_socket, (struct sockaddr*) &server_address, sizeof(server_address));
 
 	//listen to connection
 	listen(server_socket, 2);
